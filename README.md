@@ -1,6 +1,6 @@
 # Frontend
 
-![{{alt text}}](https://github.com/gdgclousantiagoapp/frontend/workflows/{{workflow%gcloud-githubactions-workflow}}/badge.svg)
+![workflow-badge](https://github.com/gdgclousantiagoapp/frontend/workflows/workflow%gcloud-githubactions-workflow/badge.svg)
 
 ## Tecnologías
 
@@ -35,3 +35,4 @@ Link Original: https://sha.ws/automatic-upload-to-google-cloud-storage-with-gith
 
 Nombre Autor Github
 Link Original: https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions
+
