@@ -1,6 +1,6 @@
 # Frontend
 
-![{{alt text}}](https://github.com/gdgclousantiagoapp/frontend/workflows/{{workflow%gcloud-githubactions-workflow}}/badge.svg)
+![workflow-badge](https://github.com/gdgclousantiagoapp/frontend/workflows/workflow%gcloud-githubactions-workflow/badge.svg)
 
 ## Tecnologías
 
