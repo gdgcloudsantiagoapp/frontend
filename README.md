@@ -26,7 +26,12 @@
 Nombre Autor: StuffedBox
 Link Original: https://www.youtube.com/watch?v=KC3Ue-1y4Rg
 
-## Tutorial para configurar GitHub Actions.
+## Tutorial para configurar GitHub Actions con Cloud Storage
 
 Nombre Autor: Brian Shaw
 Link Original: https://sha.ws/automatic-upload-to-google-cloud-storage-with-github-actions.html
+
+## Tutorial para configurar GitHub Actions 2.
+
+Nombre Autor Github
+Link Original: https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions
