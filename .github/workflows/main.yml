@@ -11,6 +11,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Use Node 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+      - name: Build Frontend
+        run: |-
+          npm install
+          npm run build:ci
       - name: Setup - gcloud / gsutil
         uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
         with:
@@ -19,4 +32,6 @@ jobs:
           export_default_credentials: true
       - name: Deploy
         run: |-
-          gsutil -m rsync -R source gs://$GCS_BUCKET
+          gsutil web set -m index.html -e index.html gs://$GCS_BUCKET
+          gsutil -m rsync -R dist/* gs://$GCS_BUCKET
+          gsutil -m acl -r ch -u AllUsers:R gs://$GCS_BUCKET/*
