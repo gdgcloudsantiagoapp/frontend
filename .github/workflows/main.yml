@@ -33,5 +33,5 @@ jobs:
       - name: Deploy
         run: |-
           gsutil web set -m index.html -e index.html gs://$GCS_BUCKET
-          gsutil -m rsync -R dist/* gs://$GCS_BUCKET
+          gsutil -m rsync -R dist/ gs://$GCS_BUCKET
           gsutil -m acl -r ch -u AllUsers:R gs://$GCS_BUCKET/*
